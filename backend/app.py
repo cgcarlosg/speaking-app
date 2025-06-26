@@ -4,7 +4,7 @@ import whisper
 import os
 
 app = Flask(__name__)
-CORS(app)  # peticiones desde tu frontend
+CORS(app)
 
 model = whisper.load_model("base")
 
@@ -23,4 +23,4 @@ def transcribe():
     return jsonify({'text': result['text']})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)  # Usa el puerto 8000
+    app.run(debug=True, port=8000)
