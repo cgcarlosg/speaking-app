@@ -23,7 +23,7 @@ recordBtn.addEventListener('click', async () => {
       transcriptEl.textContent = '⏳ Transcribiendo...';
 
       try {
-        const response = await fetch('http://localhost:8000/transcribe', {
+        const response = await fetch('https://speaking-app-1.onrender.com/transcribe', {
           method: 'POST',
           body: formData
         });
