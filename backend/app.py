@@ -4,7 +4,7 @@ import whisper
 import os
 
 app = Flask(__name__)
-CORS(app)  # Esto permite peticiones desde tu frontend
+CORS(app)  # peticiones desde tu frontend
 
 model = whisper.load_model("base")
 
