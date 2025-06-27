@@ -23,7 +23,7 @@ recordBtn.addEventListener('click', async () => {
       transcriptEl.textContent = '⏳ Transcribiendo...';
 
       try {
-        const response = await fetch('https://1f7b-179-51-111-220.ngrok-free.app/transcribe', {
+        const response = await fetch('http://localhost:8000/transcribe', {
           method: 'POST',
           body: formData
         });

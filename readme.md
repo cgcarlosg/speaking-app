@@ -53,14 +53,16 @@ venv\Scripts\activate  # En Windows
 # source venv/bin/activate  # En Linux/Mac
 
 # Instalar dependencias
-pip install -r requirements.txt
-
+pip install flask flask-cors openai-whisper psutil
 # Ejecutar servidor
 python app.py
-```
+
 
 Esto levantará el backend en: `http://localhost:8000`
 
+# Ejecutar servidor to deactivate
+ctrl+c
+deactivate
 ---
 
 ### 3. Frontend
