@@ -10,9 +10,27 @@
   <body>
     <div class="container">
       <h1>🎙️ Speaking Practice</h1>
+      <div style="text-align:center; margin-bottom:1rem;">
+  <label>
+    <input type="checkbox" id="langSwitch" />
+    Inglés (Default: Español)
+  </label>
+</div>
+<div style="display:flex; text-align:center; margin-bottom:1rem;">
+  <button id="devTopicBtn">Tema de desarrollo</button>
+  <button id="generalTopicBtn">Tema general</button>
+</div>
       <button id="recordBtn">Grabar</button>
-      <p><strong>Texto detectado:</strong> <span id="transcript"></span></p>
+      <p><strong>Texto detectado:</strong> <span id="transcript"></span>
+       <button id="clearTranscriptBtn" type="button">Borrar</button></p>
+
+<div class="container__response">
+<p><strong>Respuesta:</strong></p>
+<span id="respuestaLabel" style="font-weight:bold;"></span>
+<textarea id="respuesta" rows="4" style="width:100%; resize:vertical;" readonly></textarea>
+</div>
     </div>
+
     <script type="module" src="src/main.js"></script>
   </body>
   </body>
