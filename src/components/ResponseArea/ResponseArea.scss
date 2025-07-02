@@ -1,0 +1,23 @@
+
+.respuesta {
+  height: fit-content;
+  min-height: 170px;
+  padding: 0 10px;
+  width: 100%;
+
+  @media (min-width: 678px) {
+    width: 65%;
+  }
+}
+
+#respuesta {
+  height: fit-content;
+  min-height: 200px;
+  width: 100%;
+}
+
+#respuestaLabel {
+  display: inline-flex;
+  height: 15px;
+  width: 200px;
+}
